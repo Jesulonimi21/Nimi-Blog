@@ -14,7 +14,7 @@ var contractAddress;
 var client=null;
 
 $('#btn-make-payment').click(async function(){
-    await contractCall('makePayment',[],70000000);
+    await contractCall('makePayment',[],100000);
     window.location.href="MainPage.html";
 })
 
@@ -36,7 +36,7 @@ return calledGet;
 }
 
 window.addEventListener('load',async()=>{
-    contractAddress="ct_2Bk6sUUJEVYHu7jZZYMu5NcWYh92pUzYFKWHwwiG1WXL4zSE56";
+    contractAddress="ct_2ABvnJEEYN25ZLUesi1g2BvSk2fgCvHeKfeoJtfU4SUFWmHrn1";
     contractSource=`
     contract BlogPayment=
         record state={myAddress:address}
