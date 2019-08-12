@@ -48,6 +48,9 @@ contract BlogPayment=
     
   public entrypoint getTestValue():int=
     5
-    `
+    `;
     client = await Ae.Aepp();
+    var tValue=await callStatic('getTestValue',[]);
+    console.log(tValue);
+    
 })
