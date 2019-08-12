@@ -38,13 +38,16 @@ return calledGet;
 window.addEventListener('load',async()=>{
     contractAddress="ct_2ABvnJEEYN25ZLUesi1g2BvSk2fgCvHeKfeoJtfU4SUFWmHrn1";
     contractSource=`
-    contract BlogPayment=
-        record state={myAddress:address}
+contract BlogPayment=
+  record state={myAddress:address}
         
-        entrypoint init()={myAddress=ak_2bKhoFWgQ9os4x8CaeDTHZRGzUcSwcXYUrM12gZHKTdyreGRgG}
+  entrypoint init()={myAddress=ak_2bKhoFWgQ9os4x8CaeDTHZRGzUcSwcXYUrM12gZHKTdyreGRgG}
             
-        public stateful entrypoint makePayment()=
-            Chain.spend(state.myAddress,Call.value)
+  public stateful entrypoint makePayment()=
+    Chain.spend(state.myAddress,Call.value)
+    
+  public entrypoint getTestValue():int=
+    5
     `
     client = await Ae.Aepp();
 })
