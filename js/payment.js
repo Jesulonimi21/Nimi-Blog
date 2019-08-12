@@ -36,7 +36,7 @@ return calledGet;
 }
 
 window.addEventListener('load',async()=>{
-    contractAddress="ct_WSA33k6cTqA2Vo2HJrHQoMKvKazivt4c5aRS3FgiSA5CiQ5Ro";
+    contractAddress="ct_2Bk6sUUJEVYHu7jZZYMu5NcWYh92pUzYFKWHwwiG1WXL4zSE56";
     contractSource=`
     contract BlogPayment=
         record state={myAddress:address}
