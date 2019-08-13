@@ -1,8 +1,10 @@
 body{
     overflow-y : auto;
-    max-height:100vh;
-    max-width:100vh
+    width: 1000px;
+  height: 1000px
 }
 .nimipersonal{
       overflow-y : auto;
+    width: 1000px;
+  height: 1000px
 }
