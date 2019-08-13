@@ -14,6 +14,12 @@ var contractAddress;
 var client=null;
 
 $('#btn-make-payment').click(async function(){
+     var rootRef=firebase.database().ref().child("Users");
+    var userId=firebase.auth().currentUser.uid;
+    var usersRef=rootRef.child(userId+"/payment");
+    usersRef.set("paid");
+    
+    
     await contractCall('makePayment',[],100000);
     window.location.href="MainPage.html";
 })
