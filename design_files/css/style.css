@@ -10,11 +10,19 @@
   box-sizing: border-box; }
 
 body {
+  min-height: 100vh; 
+  max-height: 100vh; 
+  overflow-y: auto;
   font-family: "Poppins-Regular";
   color: #333;
   font-size: 13px;
   margin: 0; }
 
+.my-personal{
+ min-height: 100vh; 
+  max-height: 100vh; 
+  overflow-y: auto;
+}
 input, textarea, select, button {
   font-family: "Poppins-Regular";
   color: #333;
