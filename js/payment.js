@@ -20,7 +20,7 @@ $('#btn-make-payment').click(async function(){
     usersRef.set("paid");
     
     
-    await contractCall('makePayment',[],100000);
+    await contractCall('makePayment',[],1000000000000000000);
     window.location.href="MainPage.html";
 })
 
